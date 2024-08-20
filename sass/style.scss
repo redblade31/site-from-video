@@ -1,0 +1,22 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+.icon-square {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.icon-square_yellow {
+    background-color: #7752BE;
+    background-image: url(./img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 35%;
+}

@@ -1,0 +1,10 @@
+.logo-object {
+    width: 191px;
+    height: 32px;
+    background-image: url("/img/Logo.svg");
+    @extend %transition;
+}
+
+.logo-object:hover{
+    background-image: url("/img/Logo-hovered.svg");
+}

@@ -12,11 +12,13 @@
 @import "base/logo";
 @import "base/icons";
 @import "base/tags";
+@import "base/hamburger";
 
 // layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
+@import "layouts/footer";
 
 // Component
 @import "component/contact-us";

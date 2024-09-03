@@ -17,3 +17,9 @@
     }
 }
 
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
+}
+

@@ -10,10 +10,10 @@
 
 .hamburger {
     display: none;
-    
     position: relative;
     width: 31px;
     height: 25px;
+    margin-right: 37px;
     @include media-tablet {
         display: inline-block;
     }

@@ -1,9 +1,17 @@
+.logo {
+    display: flex;
+}
+
 .logo-object {
-    display: inline-block;
+    display: inline-flex;
     width: 191px;
     height: 32px;
     background-image: url("/img/Logo.svg");
     @extend %transition;
+    @include media-mobile {
+        background-image: url("/img/Logo-mobile.svg");
+        background-repeat: no-repeat;
+    }
 }
 
 .logo-object:hover{

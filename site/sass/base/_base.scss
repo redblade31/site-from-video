@@ -5,14 +5,14 @@ html {
 body {
     @extend %font-prim;
     @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
-    >* {
-        @extend %box-size;
-    }
 }
 
 h1 {
     @extend %font-add;
     @include font($size: 4.4rem, $height: 5.4rem);
+    @include media-mobile {
+        @include font($size: 3.2rem, $height: 4.2rem)
+    }
 }
 
 h2 {

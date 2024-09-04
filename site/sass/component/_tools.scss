@@ -19,6 +19,30 @@
     text-align: center;
 }
 
+.tool-container {
+    @include media-tablet {
+        flex-wrap: wrap;
+        >.tool {
+            flex-basis: 43%;
+        }
+    }
+    @include media-mobile {
+        >.tool {
+            flex-basis: 100%;
+            margin-bottom: 47px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.tool {
+    @include media-tablet {
+        text-align: center;
+    }
+}
+
 .tool_title {
     margin: 0 0 16px;
 }

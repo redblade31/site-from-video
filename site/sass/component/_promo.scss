@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .promo{
@@ -11,6 +14,12 @@
 
 .promo__content {
     padding-right: 67px;
+    @include media-tablet {
+        padding-right: 0;
+    }
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .promo__buttons {
@@ -21,6 +30,19 @@
     }
     >* {
         margin-right: 44px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include media-mobile {
+        flex-direction: column;
+        >* {
+            margin-right: 0;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -33,4 +55,17 @@
     margin: 0 0 45px;
     @extend %font-add;
     @include font($size: 1.8rem, $height: 2.8rem, $weight: normal);
+    @include media-tablet {
+        width: 380px;
+    }
+    @include media-mobile {
+        width: auto;
+    }
+}
+
+.promo__image {
+    @include media-mobile {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
 }

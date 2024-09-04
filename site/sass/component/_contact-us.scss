@@ -1,8 +1,9 @@
 .contact-us {
     background: $color-background;
-    padding: 62px 0 82px;
+    padding: 64px 0 82px;
     @include media-tablet {
-        text-align: center;    
+        text-align: center;
+        padding: 48px 0 50px;    
     }
 }
 
@@ -32,12 +33,22 @@
 
 .contact-us__line {
     margin-bottom: 18px;
+    @include media-mobile{
+        flex-direction: column;
+        margin-bottom: 0;
+        >* {
+            margin-bottom: 18px;
+        } 
+    }
 }
 
 .contact-us__button {
     >* {
         padding: 15px 25px 16px;
         min-width: 117px;
+    }
+    @include media-mobile {
+        margin-top: 24px;
     }
 }
 
